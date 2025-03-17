@@ -5,8 +5,8 @@ import numpy as np
 cap = cv2.VideoCapture(0)
 
 # Definer HSV-farveområder (skal justeres efter lysforhold)
-lower_white = np.array([0, 0, 180])
-upper_white = np.array([180, 50, 255])
+lower_white = np.array([0, 0, 230])  # Very low saturation, very high brightness
+upper_white = np.array([180, 20, 255])  # Only allows pure whites
 
 lower_orange = np.array([5, 100, 100])
 upper_orange = np.array([20, 255, 255])
